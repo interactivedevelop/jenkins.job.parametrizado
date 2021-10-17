@@ -13,9 +13,9 @@ job('ejemplo2-job-DSL') {
                   ['Mercurio', 'Venus', 'Tierrra', 'Marte', 'Jupiter', 'Saturno', 'Urano', 'Neptuno'])
               booleanParam('agente', false)
         }
-      triggers {
-            cron('H/7 * * * *')
-        }
+      // triggers {
+      //       cron('H/7 * * * *')
+      //   }
       steps {
             shell('bash jobscript.sh')
         }
